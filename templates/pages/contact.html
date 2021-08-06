@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/contact.css' %}">
+
+<div class="row">
+    <div class="contacts container text-center mt-5">
+        <h1>KONTAKT</h1>
+        <hr style="border-color: #736252;">
+        <div class="card">
+            <p class="cardHead">Sv Bau GmbH</p>
+            <br>
+            <p class="bodyText">Hauptstrasse 12B<br>3422&nbsp;Kirchberg<br><br>077 777 77 77<br><br>svbau@mail.com</p>
+            <div class="buttons">
+                <a href="tel:0777777777" class="btn" target="blank"> Rufen Sie uns an</a>
+                <a href="mailto: abc@example.com" class="btn" target="blank"> Schicken Sie uns E-Mail</a>
+            </div>
+        </div>
+        <div class="card">
+            <h2 class="cardHead">Öffnungszeiten</h2>
+            <hr style="border-color: #736252;">
+            <p><div class="bodyText d-flex justify-content-between"><div>Montag</div><div class="bodyTextTime">07:30 – 17:00</div></div>
+            <div class="bodyText d-flex justify-content-between"><div>Dienstag</div><div class="bodyTextTime">07:30 – 17:00</div></div>
+            <div class="bodyText d-flex justify-content-between"><div>Mittwoch</div><div class="bodyTextTime">07:30 – 17:00</div></div>
+            <div class="bodyText d-flex justify-content-between"><div>Donnerstag</div><div class="bodyTextTime">07:30 – 17:00</div></div>
+            <div class="bodyText d-flex justify-content-between"><div>Freitag</div><div class="bodyTextTime">07:30 – 17:00</div></div>
+            <div class="bodyText d-flex justify-content-between"><div>Samstag</div><div class="bodyTextTime">Geschlossen</div></div>
+            <div class="bodyText d-flex justify-content-between"><div>Sonntag</div><div class="bodyTextTime">Geschlossen</div></div></p>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10866.943528218788!2d7.5847295!3d47.0846428!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7dff610eec7f98fd!2sSv%20Bau%20Gmbh!5e0!3m2!1str!2sch!4v1625535797040!5m2!1str!2sch"
+        width="95%" height="500" style="margin-left:1%; border: 1px solid #736252; border-top-right-radius: 50px;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</div>
+
+<script src="{% static 'js/contact.js' %}"></script>
+{% endblock %}

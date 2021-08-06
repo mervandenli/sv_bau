@@ -1,0 +1,376 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/services.css' %}">
+
+<div class="row">
+    
+    <div class="card-div container-fluid mt-2 pt-2 text-center">
+        <a onclick='openService("baseline")' id="service-baseline" class="card pt-5">
+            <div class="circle">
+            <i class="fas fa-volume-mute icon"></i></div>
+            <div class="card-footer">BASELINE <br>&<br> SILENTRAUM</div>
+        </a>
+        <a onclick='openService("cleaning")' id="service-cleaning" class="card pt-5">
+            <div class="circle">
+            <i class="fas fa-pump-soap icon"></i></div>
+            <div class="card-footer"><br>REINIGUNG</div>
+        </a>
+        <a onclick='openService("plastering")' id="service-plastering" class="card pt-5">
+            <div class="circle">
+            <i class="fas fa-brush icon"></i></div>
+            <div class="card-footer"><br>GIPSEREI</div>
+        </a>
+        <a onclick='openService("painting")' id="service-painting" class="card pt-5"> 
+            <div class="circle">
+            <i class="fas fa-paint-roller icon"></i></div>
+            <div class="card-footer"><br>MALEREI</div>
+        </a>
+        <a onclick='openService("insulation")' id="service-insulation" class="card pt-5">
+            <div class="circle">
+            <i class="fas fa-cloud-sun-rain icon"></i></div>
+            <div class="card-footer">SCHALLSCHUTZ & BRANDSCHUTZ UND ISOLIERUNGEN</div>
+        </a>
+    </div>
+
+
+    <div id="baseline" class="service container text-center mt-5">
+        <h1>BASELINE & SILENTRAUM</h1>
+        <hr style="border-color: #736252;">
+        <h6 class="text-danger">(Klicken Sie auf den Schieberegler und wischen Sie zu den Seiten,
+                                um die Veränderungen zu sehen, die unsere Arbeit bewirkt hat)</h6>
+
+        <div class="img-comp-container">
+            <div class="img-comp-img">
+                <img src="{% static 'media/img/1.jpg' %}">
+                <p class="text-block-after">AFTER</p>
+            </div>
+            <div class="img-comp-img img-comp-overlay">
+                <img src="{% static 'media/img/5.jpg' %}">
+                <p class="text-block-before">BEFORE</p>
+            </div>
+        </div>
+        <div class="img-comp-container">
+            <div class="img-comp-img">
+                <img src="{% static 'media/img/4.jpg' %}">
+                <p class="text-block-after">AFTER</p>
+            </div>
+            <div class="img-comp-img img-comp-overlay">
+                <img src="{% static 'media/img/3.jpg' %}">
+                <p class="text-block-before">BEFORE</p>
+            </div>
+        </div>
+        <div class="img-comp-container">
+            <div class="img-comp-img">
+                <img src="{% static 'media/img/2.jpg' %}">
+                <p class="text-block-after">AFTER</p>
+            </div>
+            <div class="img-comp-img img-comp-overlay">
+                <img src="{% static 'media/img/1.jpg' %}">
+                <p class="text-block-before">BEFORE</p>
+            </div>
+        </div>
+        <div class="img-comp-container">
+            <div class="img-comp-img">
+                <img src="{% static 'media/img/6.jpg' %}">
+                <p class="text-block-after">AFTER</p>
+            </div>
+            <div class="img-comp-img img-comp-overlay">
+                <img src="{% static 'media/img/2.jpg' %}">
+                <p class="text-block-before">BEFORE</p>
+            </div>
+        </div>
+        <div class="img-comp-container">
+            <div class="img-comp-img">
+                <img src="{% static 'media/img/5.jpg' %}">
+                <p class="text-block-after">AFTER</p>
+            </div>
+            <div class="img-comp-img img-comp-overlay">
+                <img src="{% static 'media/img/4.jpg' %}">
+                <p class="text-block-before">BEFORE</p>
+            </div>
+        </div>
+        <div class="img-comp-container">
+            <div class="img-comp-img">
+                <img src="{% static 'media/img/2.jpg' %}">
+                <p class="text-block-after">AFTER</p>
+            </div>
+            <div class="img-comp-img img-comp-overlay">
+                <img src="{% static 'media/img/1.jpg' %}">
+                <p class="text-block-before">BEFORE</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="cleaning" class="service container text-center mt-5">
+        <h1>REINIGUNG</h1>
+        <hr style="border-color: #736252;">
+        <h6 class="text-danger">(Klicken Sie auf den Schieberegler und wischen Sie zu den Seiten,
+                                um die Veränderungen zu sehen, die unsere Arbeit bewirkt hat)</h6>
+        <div class="img-comp-container">
+            <div class="img-comp-img">
+                <img src="{% static 'media/img/1.jpg' %}">
+                <p class="text-block-after">AFTER</p>
+            </div>
+            <div class="img-comp-img img-comp-overlay">
+                <img src="{% static 'media/img/5.jpg' %}">
+                <p class="text-block-before">BEFORE</p>
+            </div>
+        </div>
+        <div class="img-comp-container">
+            <div class="img-comp-img">
+                <img src="{% static 'media/img/4.jpg' %}">
+                <p class="text-block-after">AFTER</p>
+            </div>
+            <div class="img-comp-img img-comp-overlay">
+                <img src="{% static 'media/img/3.jpg' %}">
+                <p class="text-block-before">BEFORE</p>
+            </div>
+        </div>
+        <div class="img-comp-container">
+            <div class="img-comp-img">
+                <img src="{% static 'media/img/2.jpg' %}">
+                <p class="text-block-after">AFTER</p>
+            </div>
+            <div class="img-comp-img img-comp-overlay">
+                <img src="{% static 'media/img/1.jpg' %}">
+                <p class="text-block-before">BEFORE</p>
+            </div>
+        </div>
+        <div class="img-comp-container">
+            <div class="img-comp-img">
+                <img src="{% static 'media/img/6.jpg' %}">
+                <p class="text-block-after">AFTER</p>
+            </div>
+            <div class="img-comp-img img-comp-overlay">
+                <img src="{% static 'media/img/2.jpg' %}">
+                <p class="text-block-before">BEFORE</p>
+            </div>
+        </div>
+        <div class="img-comp-container">
+            <div class="img-comp-img">
+                <img src="{% static 'media/img/5.jpg' %}">
+                <p class="text-block-after">AFTER</p>
+            </div>
+            <div class="img-comp-img img-comp-overlay">
+                <img src="{% static 'media/img/4.jpg' %}">
+                <p class="text-block-before">BEFORE</p>
+            </div>
+        </div>
+        <div class="img-comp-container">
+            <div class="img-comp-img">
+                <img src="{% static 'media/img/2.jpg' %}">
+                <p class="text-block-after">AFTER</p>
+            </div>
+            <div class="img-comp-img img-comp-overlay">
+                <img src="{% static 'media/img/1.jpg' %}">
+                <p class="text-block-before">BEFORE</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="plastering" class="service container text-center mt-5">
+        <h1>GIPSEREI</h1>
+        <hr style="border-color: #736252;">
+        <h6 class="text-danger">(Klicken Sie auf den Schieberegler und wischen Sie zu den Seiten,
+                                um die Veränderungen zu sehen, die unsere Arbeit bewirkt hat)</h6>
+        <div class="img-comp-container">
+            <div class="img-comp-img">
+                <img src="{% static 'media/img/1.jpg' %}">
+                <p class="text-block-after">AFTER</p>
+            </div>
+            <div class="img-comp-img img-comp-overlay">
+                <img src="{% static 'media/img/5.jpg' %}">
+                <p class="text-block-before">BEFORE</p>
+            </div>
+        </div>
+        <div class="img-comp-container">
+            <div class="img-comp-img">
+                <img src="{% static 'media/img/4.jpg' %}">
+                <p class="text-block-after">AFTER</p>
+            </div>
+            <div class="img-comp-img img-comp-overlay">
+                <img src="{% static 'media/img/3.jpg' %}">
+                <p class="text-block-before">BEFORE</p>
+            </div>
+        </div>
+        <div class="img-comp-container">
+            <div class="img-comp-img">
+                <img src="{% static 'media/img/2.jpg' %}">
+                <p class="text-block-after">AFTER</p>
+            </div>
+            <div class="img-comp-img img-comp-overlay">
+                <img src="{% static 'media/img/1.jpg' %}">
+                <p class="text-block-before">BEFORE</p>
+            </div>
+        </div>
+        <div class="img-comp-container">
+            <div class="img-comp-img">
+                <img src="{% static 'media/img/6.jpg' %}">
+                <p class="text-block-after">AFTER</p>
+            </div>
+            <div class="img-comp-img img-comp-overlay">
+                <img src="{% static 'media/img/2.jpg' %}">
+                <p class="text-block-before">BEFORE</p>
+            </div>
+        </div>
+        <div class="img-comp-container">
+            <div class="img-comp-img">
+                <img src="{% static 'media/img/5.jpg' %}">
+                <p class="text-block-after">AFTER</p>
+            </div>
+            <div class="img-comp-img img-comp-overlay">
+                <img src="{% static 'media/img/4.jpg' %}">
+                <p class="text-block-before">BEFORE</p>
+            </div>
+        </div>
+        <div class="img-comp-container">
+            <div class="img-comp-img">
+                <img src="{% static 'media/img/2.jpg' %}">
+                <p class="text-block-after">AFTER</p>
+            </div>
+            <div class="img-comp-img img-comp-overlay">
+                <img src="{% static 'media/img/1.jpg' %}">
+                <p class="text-block-before">BEFORE</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="painting" class="service container text-center mt-5">
+        <h1>MALEREI</h1>
+        <hr style="border-color: #736252;">
+        <h6 class="text-danger">(Klicken Sie auf den Schieberegler und wischen Sie zu den Seiten,
+                                um die Veränderungen zu sehen, die unsere Arbeit bewirkt hat)</h6>
+        <div class="img-comp-container">
+            <div class="img-comp-img">
+                <img src="{% static 'media/img/1.jpg' %}">
+                <p class="text-block-after">AFTER</p>
+            </div>
+            <div class="img-comp-img img-comp-overlay">
+                <img src="{% static 'media/img/5.jpg' %}">
+                <p class="text-block-before">BEFORE</p>
+            </div>
+        </div>
+        <div class="img-comp-container">
+            <div class="img-comp-img">
+                <img src="{% static 'media/img/4.jpg' %}">
+                <p class="text-block-after">AFTER</p>
+            </div>
+            <div class="img-comp-img img-comp-overlay">
+                <img src="{% static 'media/img/3.jpg' %}">
+                <p class="text-block-before">BEFORE</p>
+            </div>
+        </div>
+        <div class="img-comp-container">
+            <div class="img-comp-img">
+                <img src="{% static 'media/img/2.jpg' %}">
+                <p class="text-block-after">AFTER</p>
+            </div>
+            <div class="img-comp-img img-comp-overlay">
+                <img src="{% static 'media/img/1.jpg' %}">
+                <p class="text-block-before">BEFORE</p>
+            </div>
+        </div>
+        <div class="img-comp-container">
+            <div class="img-comp-img">
+                <img src="{% static 'media/img/6.jpg' %}">
+                <p class="text-block-after">AFTER</p>
+            </div>
+            <div class="img-comp-img img-comp-overlay">
+                <img src="{% static 'media/img/2.jpg' %}">
+                <p class="text-block-before">BEFORE</p>
+            </div>
+        </div>
+        <div class="img-comp-container">
+            <div class="img-comp-img">
+                <img src="{% static 'media/img/5.jpg' %}">
+                <p class="text-block-after">AFTER</p>
+            </div>
+            <div class="img-comp-img img-comp-overlay">
+                <img src="{% static 'media/img/4.jpg' %}">
+                <p class="text-block-before">BEFORE</p>
+            </div>
+        </div>
+        <div class="img-comp-container">
+            <div class="img-comp-img">
+                <img src="{% static 'media/img/2.jpg' %}">
+                <p class="text-block-after">AFTER</p>
+            </div>
+            <div class="img-comp-img img-comp-overlay">
+                <img src="{% static 'media/img/1.jpg' %}">
+                <p class="text-block-before">BEFORE</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="insulation" class="service container text-center mt-5">
+        <h1>SCHALLSCHUTZ & BRANDSCHUTZ UND ISOLIERUNGEN</h1>
+        <hr style="border-color: #736252;">
+        <h6 class="text-danger">(Klicken Sie auf den Schieberegler und wischen Sie zu den Seiten,
+                                um die Veränderungen zu sehen, die unsere Arbeit bewirkt hat)</h6>
+        <div class="img-comp-container">
+            <div class="img-comp-img">
+                <img src="{% static 'media/img/1.jpg' %}">
+                <p class="text-block-after">AFTER</p>
+            </div>
+            <div class="img-comp-img img-comp-overlay">
+                <img src="{% static 'media/img/5.jpg' %}">
+                <p class="text-block-before">BEFORE</p>
+            </div>
+        </div>
+        <div class="img-comp-container">
+            <div class="img-comp-img">
+                <img src="{% static 'media/img/4.jpg' %}">
+                <p class="text-block-after">AFTER</p>
+            </div>
+            <div class="img-comp-img img-comp-overlay">
+                <img src="{% static 'media/img/3.jpg' %}">
+                <p class="text-block-before">BEFORE</p>
+            </div>
+        </div>
+        <div class="img-comp-container">
+            <div class="img-comp-img">
+                <img src="{% static 'media/img/2.jpg' %}">
+                <p class="text-block-after">AFTER</p>
+            </div>
+            <div class="img-comp-img img-comp-overlay">
+                <img src="{% static 'media/img/1.jpg' %}">
+                <p class="text-block-before">BEFORE</p>
+            </div>
+        </div>
+        <div class="img-comp-container">
+            <div class="img-comp-img">
+                <img src="{% static 'media/img/6.jpg' %}">
+                <p class="text-block-after">AFTER</p>
+            </div>
+            <div class="img-comp-img img-comp-overlay">
+                <img src="{% static 'media/img/2.jpg' %}">
+                <p class="text-block-before">BEFORE</p>
+            </div>
+        </div>
+        <div class="img-comp-container">
+            <div class="img-comp-img">
+                <img src="{% static 'media/img/5.jpg' %}">
+                <p class="text-block-after">AFTER</p>
+            </div>
+            <div class="img-comp-img img-comp-overlay">
+                <img src="{% static 'media/img/4.jpg' %}">
+                <p class="text-block-before">BEFORE</p>
+            </div>
+        </div>
+        <div class="img-comp-container">
+            <div class="img-comp-img">
+                <img src="{% static 'media/img/2.jpg' %}">
+                <p class="text-block-after">AFTER</p>
+            </div>
+            <div class="img-comp-img img-comp-overlay">
+                <img src="{% static 'media/img/1.jpg' %}">
+                <p class="text-block-before">BEFORE</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="{% static 'js/services.js' %}"></script>
+
+{% endblock %}

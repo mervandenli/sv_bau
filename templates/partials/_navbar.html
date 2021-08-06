@@ -1,0 +1,51 @@
+{% load static %}
+
+<header>
+    <div id="navbar" class="navbar navbar-expand-md navbar-light">
+
+        <a href="{% url 'index' %}">
+            <img id="logo" src="{% static 'media/logo/logo.png' %}">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul id="navbar-right" class="navbar-nav ml-auto">
+                <li><a id="a" href="{% url 'index' %}"
+                        {% if request.path == '/' %}
+                            class="nav-item active"
+                        {% else %}
+                            class="nav-item"
+                        {% endif %}><i class="fas fa-home"></i> HOME</a></li>
+                <li><a id="a" href="{% url 'services' %}"
+                        {% if 'services' in request.path %}
+                            class="nav-item active"
+                        {% else %}
+                            class="nav-item"
+                        {% endif %}><i class="fas fa-tools"></i> DIENSTLEISTUNGEN</a></li>
+                <li><a id="a" href="{% url 'references' %}"
+                        {% if 'references' in request.path %}
+                            class="nav-item active"
+                        {% else %}
+                            class="nav-item"
+                        {% endif %}><i class="fas fa-handshake"></i> REFERENZEN</a></li>
+                <li><a id="a" href="{% url 'about' %}"
+                        {% if 'about' in request.path %}
+                            class="nav-item active"
+                        {% else %}
+                            class="nav-item"
+                        {% endif %}><i class="fas fa-info-circle"></i> ÜBER UNS</a></li>
+                <li><a id="a" href="{% url 'contact' %}"
+                        {% if 'contact' in request.path %}
+                            class="nav-item active"
+                        {% else %}
+                            class="nav-item"
+                        {% endif %}><i class="fas fa-phone-square-alt"></i> KONTAKT</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<script src="{% static 'js/navbar.js' %}"></script>

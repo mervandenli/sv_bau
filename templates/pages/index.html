@@ -1,0 +1,75 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+
+<div class="row">
+    
+    <div class="cards container col-sm-12 col-md-12 col-lg-12 mb-5">
+        <a href="{% url 'services' %}">
+            <div class="logos">
+                <img src="{% static 'media/logo/Plastering.jpg' %}" class="image col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <div class="middle">
+                    <div class="text">G I P S E R E I</div>
+                </div>
+            </div>
+        </a>
+        <a href="{% url 'services' %}">
+            <div class="logos">
+                <img src="{% static 'media/logo/painting.jpg' %}" class="image col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <div class="middle">
+                    <div class="text">M A L E R E I</div>
+                </div>
+            </div>
+        </a>
+        <a href="{% url 'services' %}">
+            <div class="logos">
+                <img src="{% static 'media/logo/cleaning.jpg' %}" class="image col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <div class="middle">
+                    <div class="text">R E I N I G U N G</div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="paragraph container col-12 text-center">
+        <h1>Lorem ipsum dolor</h1>
+        <p class="container">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil obcaecati beatae possimus quis iure ullam exercitationem assumenda
+            cupiditate molestias harum illum placeat accusantium, fugit non sed ipsa ratione sint! Alias cum aspernatur amet?
+            Voluptates exercitationem iure ipsam dolore eligendi repudiandae, reiciendis accusamus quae ex sequi vero perferendis,
+            quo atque sint. Hic illum rem distinctio adipisci at similique ullam accusamus, reprehenderit dicta modi excepturi possimus
+            culpa soluta eos qui nulla quaerat quo velit porro eaque! Suscipit reiciendis nostrum nam ab aliquid, iusto quas?
+            Eum voluptatum numquam laboriosam eveniet vel molestias voluptate?</p>
+    </div>
+
+    <div id="slider" class="container text-center col-12 mb-5">
+        <div class="pic fade">
+            <img class="images" src="{% static 'media/img/1.jpg' %}">
+        </div>
+        <div class="pic fade">
+            <img class="images" src="{% static 'media/img/2.jpg' %}">
+        </div>
+        <div class="pic fade">
+            <img class="images" src="{% static 'media/img/3.jpg' %}">
+        </div>
+        <div class="pic fade">
+            <img class="images" src="{% static 'media/img/4.jpg' %}">
+        </div>
+        <div class="pic fade">
+            <img class="images" src="{% static 'media/img/5.jpg' %}">
+        </div>
+    </div>
+
+    <div class="paragraph container col-12 text-center mt-5 mb-5">
+        <h1>Lorem ipsum dolor</h1>
+        <p class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor est odio sunt dolores aperiam itaque natus magni
+            optio quasi error, iusto vero. Aut sed consequatur blanditiis veritatis, ratione exercitationem accusamus,
+            a quo molestiae fugiat explicabo fugit odit magni atque!
+            Voluptatibus, officiis vel. Iure ipsum excepturi corrupti odio commodi, nemo dolor?</p>
+    </div>
+</div>
+<script src="{% static 'js/slider.js' %}"></script>
+
+{% endblock %}
